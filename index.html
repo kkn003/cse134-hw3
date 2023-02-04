@@ -6,175 +6,94 @@
     </head>
 
     <body>
-		<canvas id="test">Canvas tag</canvas>
-        <script>
-            var canvas_tag = document.getElementById("test");
-        </script>
-        <div>
-            <svg width="100" height="100">
-                <circle cx="30" cy="30" r="30" stroke="red" stroke-width="3" fill="yellow"></circle>
-            </svg>
-        </div>
-
         <header>
             <h1>
                 <em>KIM KHOA NGUYEN's RESUME</em>
             </h1>
-			<h2>
-				Looking for a job!
-			</h2>
-			<h3>
-				Software Engineer
-			</h3>
-			<pre>
-				This is something about me that I want to share.
-			</pre>
+			
 
 			<figure>
 				<img src="images/kim.jpg" alt="Kim" style="width:10%">
 				<figcaption>Kim K</figcaption>
 			</figure>
-
-            <section id="My_Skills">
-                <h2>
-                    Info:
-                </h2>
-                <label>My name is Kim Khoa Nguyen</label>
-                <label>My major is Computer Science</label>
-                <ul>
-                    <li>MySQL</li>
-                    <li>Javascript</li>
-                    <li>HTML</li>
-                </ul>
-            </section>
         </header>
 
         <main>
-            <h2>My experience:</h2>
-            <textarea rows="4" cols="120">
+            <section id="Summary">
+                <h2>
+                    SUMMARY:
+                </h2>
+            <p> 
+                I am a senior full-time student majoring in Computer Science at UCSD and working at Science Applications International Corp (SAIC) as an intern. I am fluent in Java, C++, and SQL, and also know Python, and Javascript. I like challenging problems and love coding. I’m hardworking and eager to learn. I am looking for a full-time job to be able to contribute to exciting projects and further strengthen my programming skill sets.
+            </p>
+            </section>
+
+            <section id="Projects">
+                <h2>
+                    PROJECTS:
+                </h2>
+                <ul>
+                    <li>Compression and Uncompression — C++</li>
+                    <li>The efficient Graph — C++</li>
+                    <li>Bank Account Management — Java</li>
+                    <li>Blockchain Project — Java </li>
+                    <li>Battleship Game — C++</li>
+                    <li>Collecting Data by Drone — Java, Javascript, JSON</li>
+                </ul>
+            </section>
+
+            <section id="Education">
+                <h2>
+                    EDUCATION:
+                </h2>
+                <ul>
+                    <li>University of California San Diego</li>
+                    <li>Grossmont College</li>
+                </ul>
+            </section>
+            
+            <section id="Courswork">
+                <h2>
+                    courswork:
+                </h2>
+                <table>
+                    <caption>Courses have done</caption>
+                    <colgroup>
+                        <col style="background-color:rgb(38, 255, 0)">
+                        <col style="background-color:rgb(38, 255, 0)">
+                        <col style="background-color:rgb(38, 255, 0)">
+                    </colgroup>
+                    <tr>
+                        <th>2020</th>
+                        <th>2021</th>
+                        <th>2023</th>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>Java</td>
+                        <td>Advanced Data Structures</td>
+                    </tr>
+                    <tr>
+                        <td>Cryptography</td>
+                        <td>Software Engineering</td>
+                        <td>Discrete Mathematics</td>
+                    </tr>
+                </table>
+            </section>
+            
+
+            <section id="Experience">
+            <h2>EXPERIENCE</h2>
+            <pre>
                 Writes test cases and identifies data for test scenarios.
                 Documents and communicates test results.
                 Supports analysis of test results and resolution of open issues.
                 Reports progress on problem resolution to management.
-            </textarea>
-			<hr>
-			<strong>
-			I am a senior full-time student majoring in Computer Science at UCSD and working at Science Applications International Corp (SAIC) as an intern.
-			</strong>
-			<hr>
-			<strong>
-			I am fluent in Java, C++, and SQL, and also know Python, and Javascript.
-			</strong> 
-			<hr>
-			<strong>
-			I like challenging problems and love coding. 
-			</strong>
-			<hr>
-			<strong>
-			I’m hardworking and eager to learn.
-			</strong>
-			<hr>
-			<strong>
-			I am looking for a full-time job to be able to contribute to exciting projects and further strengthen my programming skill sets.
-			</strong> 
-			<hr>
+            </pre>
+            </section>
 
-            <ol>
-                <li>
-                    <b>Science Applications International Corp
-                    </b>
-                    —
-                    <i>Software technician intern</i>
-                    <picture>
-							<source srcset="images/saic.jpg" type="image/jpeg">
-                            <img src="images/saic.jpg" alt="image" width="50" height="30">
-                    </picture>
-                    <a href="https://www.saic.com">Visit SAIC!</a>
-                    <iframe src="https://www.saic.com/what-we-do/mission-support" title="SAIC introduction"></iframe>
-                </li>
-                <li>
-                    <b>University of California San Diego</b>
-                    -
-                    <i>Student</i>
-                    <picture>
-							<source srcset="images/logo.png" type="image/png">
-                            <img src="images/logo.png" alt="image" width="70" height="30">
-                    </picture>
-                    <a href="https://ucsd.edu">Visit UCSD!</a>
-                    <iframe src="https://ucsd.edu/about/index.html" title="UCSD introduction"></iframe>
-                </li>
-            </ol>
-            <h2>My school:</h2>
-            <section class="video">
-                <h2>UCSD Introduction Video</h2>
-                <video controls height="393" width="700">
-                    <source src="videos/videoplayback.mp4" type="video/mp4">
-                </video>
-			</section>
-            <section class="audio">
-                <h2>
-                    Chill music!
-                </h2>
-            <audio controls autoplay><source src="audios/lofi.mp3" type="audio/mp3"></audio>
-        	</section>
-		<form>
-        <select>
-            <optgroup label="Refer Me or Not">
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-            </optgroup>
-        </select>
-		</form>
-        <form>
-            <label>Name:</label>
-            <input type="text"><br><br>
-            <label>Contact:</label>
-            <input type="text"><br><br>
-            <button type="button">Click to submit</button>
-        </form>
-        
-		<form>
-			<label>Where do you know my resume?</label>
-			<input list="ways">	
-        <datalist id="ways">
-            <option value="Friends"></option>
-            <option value="linkedin"></option>
-            <option value="School"></option>
-        </datalist>
-		</form>
-        <details>
-            <summary>More about me</summary>
-            <p>I have shared everything! Thank you</p>
-        </details>
-
-        <template>
-            <h2>UCSD</h2>
-            <img src="images/ucsd.gif" width="214" height="204">
-        </template>
-        <table>
-            <caption>Courses have done</caption>
-            <colgroup>
-                <col style="background-color:rgb(38, 255, 0)">
-				<col style="background-color:rgb(38, 255, 0)">
-				<col style="background-color:rgb(38, 255, 0)">
-            </colgroup>
-            <tr>
-                <th>2020</th>
-                <th>2021</th>
-                <th>2023</th>
-            </tr>
-            <tr>
-                <td>C++</td>
-                <td>Java</td>
-                <td>Advanced Data Structures</td>
-            </tr>
-            <tr>
-                <td>Cryptography</td>
-                <td>Software Engineering</td>
-                <td>Discrete Mathematics</td>
-            </tr>
-		</table>
         </main>
+
 
         <footer>
 			<fieldset>
@@ -182,6 +101,7 @@
 				<p>Website is made by Kim Khoa Nguyen</p>
 			</fieldset>
         </footer>
+    
     </body>
 
 </html>
