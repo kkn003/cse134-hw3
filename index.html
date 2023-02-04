@@ -7,10 +7,22 @@
         <style>
             @font-face {font-family: "handwriting";
                         src: url(fonts/Literata/static/handwriting.ttf);}
+            #Kim {
+                position: absolute;
+                animation: mypic_rolling 4s ease-in-out infinite;
+            }
+            @keyframes mypic_rolling {
+                from {
+                    left: 0;
+                    }
+                    to {
+                    left: 100%;
+                    }
+            }
             header {
                 text-align: center;
-                font-family: "handwriting"; 
-                font-size: 4em; 
+                font-family: "handwriting", serif; 
+                font-size: 2em; 
                     }
             
             main {
@@ -37,7 +49,7 @@
 			
 
 			<figure>
-				<img src="images/kim.jpg" alt="Kim" style="width:10%">
+				<img id="Kim" src="images/kim.jpg" alt="Kim" style="width:10%">
 			</figure>
         </header>
 
