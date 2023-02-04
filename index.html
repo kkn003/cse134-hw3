@@ -3,6 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title>Another one</title>
+
+        <style>
+            body {
+              display: flex;
+              flex-direction: row;
+            }
+        </style>
+
     </head>
 
     <body>
@@ -19,6 +27,8 @@
         </header>
 
         <main>
+            <div style="display: flex; flex-direction: row;">
+            <div style="width: 50%;">
             <section id="Summary">
                 <h2>
                     SUMMARY:
@@ -51,7 +61,9 @@
                     <li>Grossmont College</li>
                 </ul>
             </section>
+            </div>
 
+            <div style="width: 50%;">
             <section id="Skills">
                 <h2>
                     SKILLS:
@@ -93,7 +105,7 @@
             
 
             <section id="Experience">
-            <h2>EXPERIENCE</h2>
+            <h2>EXPERIENCE:</h2>
             <pre>
                 Writes test cases and identifies data for test scenarios.
                 Documents and communicates test results.
@@ -113,7 +125,7 @@
                     <input type="submit" value="Submit">
                 </form>
             </section>
-    
+        </div>
         </main>
 
 
