@@ -5,13 +5,28 @@
         <title>Another one</title>
 
         <style>
+            header {
+                text-align: center;
+                    }
+
+            main {
+            display: flex;
+            flex-direction: row;
+            }
+
+            .first_main {
+            flex: 1;
+            }
             
+            .second_main {
+            flex: 1;
+            }
         </style>
 
     </head>
 
     <body>
-        <header style="display: flex; flex-direction: row;">
+        <header>
             <h1>
                 <em>KIM KHOA NGUYEN's RESUME</em>
             </h1>
@@ -23,7 +38,8 @@
 			</figure>
         </header>
 
-        <main style="display: flex; flex-direction: column; width: 50%;">
+        <main>
+            <div class="first_main">
             <section id="Summary">
                 <h2>
                     SUMMARY:
@@ -67,7 +83,9 @@
                     <li>Teamwork</li>
                 </ul>
             </section>
-            
+            </div>
+
+            <div class="second_main">
             <section id="Courswork">
                 <h2>
                     COURSEWORK:
@@ -119,6 +137,7 @@
                 </form>
             </section>
 
+            </div>
         </main>
 
 
